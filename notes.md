@@ -2,6 +2,14 @@
 Assemble program
 ```shell
 # assemble
+
+# NASM assembler
+nasm -f elf32 <file_name.asm> -o <output_file_name.o>
+
+# link
+ld -m elf_i386 <file_name.o> -o <exec_file_name>
+
+# GNU assembler
 as --gstabs -o doNothingByProgrammer.o doNothingByProgrammer.s
 # link
 gcc -o doNothingByProgrammer doNothingByProgrammer.o
