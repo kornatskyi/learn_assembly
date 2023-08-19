@@ -34,9 +34,12 @@ main:
   ; epilog
   mov esp, ebp
   pop ebp
-  ret
+  ; exit the program
+  mov eax, 1   ; syscall number for exit on x86-64 architecture
+  mov ebx, 0 ; exit status code
+  int 0x80       ; invoke syscall
 
-print_result:
+print_result: ; prints the result message
   push ebp
   mov ebp, esp
 
@@ -50,7 +53,7 @@ print_result:
   pop ebp
   ret
 
-print_error:
+print_error: ; prints the error and exits the program with status code 1
   push ebp
   mov ebp, esp
 
@@ -58,6 +61,8 @@ print_error:
   push err
   call printf
   add esp, 8 ; clean up the stack (2 pushes * 4 bytes each)
+
+  ; exit the programm
   mov eax, 1
   mov ebx, 1 ; set status code
   int 0x80
