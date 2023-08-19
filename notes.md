@@ -31,7 +31,6 @@ r
 # enable TUI
 tui enable
 
-
 # split TUI to see registers
 layout regs 
 
