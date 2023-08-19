@@ -3,8 +3,8 @@ extern printf
 
 section .data
   msg db "Answer %i", 0x0a, 0x00
-  a dd 1113
-  b dd 9
+  a dd 3
+  b dd -1
 
 section .text
 main:
