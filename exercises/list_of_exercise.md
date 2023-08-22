@@ -6,7 +6,7 @@
 6. **Fibonacci Series**: Write a program that generates the Fibonacci series up to a given number n. The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. [done](./Fibonacci_Series.asm)
 7. **String Reversal**: Write a function that reverses a string. For example, if the input string is "hello", the function should return "olleh". [done](./reverse_string.asm)
 8. **String Length**: Write a function that calculates the length of a string without using any built-in functions.
-9. **String Copy**: Write a function that copies one string to another location in memory.
+9. **String Copy**: Write a function that copies one string to another location in memory. [done](./string_copy.asm)
 10. **Array Sum**: Write a function that takes an array of integers and its size as parameters and returns the sum of the elements in the array.
 11. **Array Average**: Based on the previous exercise, write a function that calculates the average of an array of integers.
 12. **Find Maximum**: Write a function that takes an array of integers and its size as parameters and returns the largest number in the array.

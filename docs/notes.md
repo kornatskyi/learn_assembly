@@ -34,10 +34,17 @@ tui enable
 # split TUI to see registers
 layout regs 
 
+# with tui enable
+gdb -tui -ex "layout regs" exec
+
 ```
 
 
 Minimalistic C compile
 ```shell
-gcc -O0 -Wall -masm=intel -S -fno-asynchronous-unwind-tables -fcf-protection=none doNothingProg1.c
+gcc -O0 -Wall -masm=intel -S -fno-asynchronous-unwind-tables -fcf-protection=none <program.c>
+
+
+# for x32
+gcc -m32 -O0 -Wall -masm=intel -S -fno-asynchronous-unwind-tables -fcf-protection=none <program.c>
 ```
