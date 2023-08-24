@@ -2,7 +2,7 @@ global main
 extern printf
 
 section .data
-  someString db "Hello", 0x00
+  format_string db "Hello, %i", 0x0a, 0x00
 
 section .text
 main:
